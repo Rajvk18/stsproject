@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 12, 2019 9:45:11 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Train" table="TRAIN">
+        <id name="trainId" type="int">
+            <column name="TRAINID" />
+            <generator class="increment" />
+        </id>
+        <property name="source" type="java.lang.String">
+            <column name="SOURCE" />
+        </property>
+        <property name="dest" type="java.lang.String">
+            <column name="DEST" />
+        </property>
+        <property name="noOfSeats" type="java.lang.String">
+            <column name="NOOFSEATS" />
+        </property>
+        <property name="timing" type="java.lang.String">
+            <column name="TIMING" />
+        </property>
+        <property name="fair" type="java.lang.String">
+            <column name="FAIR" />
+        </property>
+    </class>
+</hibernate-mapping>
